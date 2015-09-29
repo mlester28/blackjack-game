@@ -56,8 +56,9 @@ class Dealer(Player):
                 #print("added 10")
 
         #if A in hand and sum < 11, add 10
-        if numberA > 0 and sum < 11:
+        while numberA > 0 and sum < 11:
             sum += 10
+            numberA -= 1
         return sum
 
 
